@@ -8,7 +8,7 @@ and practice :smiley:.
 * p7 - consider the usage of incremental or segmented Sieve
 
 ### Food for thought ###
-* p5, consider the Sieve algorithm in next revision, can tackle [yuge ranges][].
+* p5 - consider the Sieve algorithm in next revision, can tackle [yuge ranges][].
 
     [yuge ranges]: https://stackoverflow.com/a/11493585
 
