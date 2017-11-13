@@ -5,10 +5,10 @@ the mathematics and then implement them yourself. It's all in the name of fun
 and practice :smiley:.
 
 ## WIP ##
-* p7 - consider the usage of incremental or segmented Sieve
 
 ### Food for thought ###
 * p5 - consider the Sieve algorithm in next revision, can tackle [yuge ranges][].
 
     [yuge ranges]: https://stackoverflow.com/a/11493585
 
+* p7 - runs over 1 min, consider dynamic sieve
