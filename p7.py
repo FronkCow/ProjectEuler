@@ -15,16 +15,21 @@ print("part 2")
 
 upper_limit = int(math.sqrt(len(list_all)))
 
+counter = 0
+
 print(upper_limit)
-for x in xrange(2, upper_limit):
+for x in xrange(2, arb_limit):
+    if (counter == 10001):
+        break
     if list_all[x] == True:
         # logic here is  wrong, doesn't catch all primes
-        # list_prime.append(x)
+        list_prime.append(x)
+        counter += 1
         for y in xrange(x + x, len(list_all), x):
             list_all[y] = False
 
-for x in xrange(2, arb_limit):
-    if list_all[x] == True:
-        list_prime.append(x)
+#for x in xrange(2, arb_limit):
+    #if list_all[x] == True:
+        #list_prime.append(x)
 
 print(list_prime[10000])
