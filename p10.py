@@ -1,4 +1,4 @@
-# What is the 10 001st prime number?
+# https://projecteuler.net/problem=10
 import sys
 import math
 
@@ -6,7 +6,7 @@ import math
 # max_num = sys.maxsize
 # print(max_num)
 
-arb_limit = 200000000
+arb_limit = 2000000
 
 list_all = [True] * arb_limit
 list_prime = []
@@ -27,4 +27,6 @@ for x in xrange(2, arb_limit):
     if list_all[x] == True:
         list_prime.append(x)
 
-print(list_prime[10000])
+sum_prime = sum(list_prime)
+
+print(sum_prime)
