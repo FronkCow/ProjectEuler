@@ -6,14 +6,16 @@ curr_value = 0
 
 while not over_fivehundred:
     curr_value += counter
-    multiples_list = [curr_value]
-    #print curr_value
-    for x in range(1, int(curr_value / 2) + 1):
+    multiples_list = []
+    # print curr_value
+    for x in range(1, int(math.ceil(math.sqrt(curr_value)))):
         if curr_value % x == 0:
+            multiples_list.append(curr_value / x)
             multiples_list.append(x)
-    #print (multiples_list)
+    # print (multiples_list)
     if len(multiples_list) > 500:
         over_fivehundred = True
-        print len(multiples_list)
+        print "final num: " + str(curr_value)
+        print "final len: " + str(len(multiples_list))
     
     counter += 1
